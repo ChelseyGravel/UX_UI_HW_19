@@ -1,0 +1,1 @@
+console.log("your indes.js file is loaded correctly!");
