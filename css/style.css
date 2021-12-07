@@ -33,13 +33,11 @@ body {
 .dropbtn {
   background-color: black;
   font-size: 24px;
-  border: none;
   color: #6663D4;
   padding: 1px;
   border: none;
   cursor: pointer;
   display: flex;
-  text-decoration: underline;
   flex-direction: row;
   align-items: center;
 }
@@ -53,10 +51,12 @@ body {
   display: none;
   position: absolute;
   background-color: black;
-  min-width: 160px;
+  min-width: 300px;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
   z-index: 1;
+  border: 1px solid white;
 }
+
 
 .dropdown-content a {
   color: black;
@@ -74,13 +74,17 @@ body {
 
 .dropdown:hover .dropdown-content {
   display: block;
+  
 }
 
 .dropdown:hover .dropbtn {
-  background-color: #6663D4;
-  color: black;
+  background-color: black;
+  color: #6663D4;
 }
 
+.close {
+  cursor: pointer;
+}
 
 .icons {
   position: absolute;
