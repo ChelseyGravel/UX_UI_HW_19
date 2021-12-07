@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Chelsey Gravel Designs</title>
         <link href="./css/style.css" rel="stylesheet" type="text/css">
     </head>
@@ -11,7 +12,16 @@
                <div class="navigation">
                    <a href="./index.html" class="paragraph">About Me</a>
                    <a href="./skills.html" class="paragraph">My Skills</a>
-                   <a href="./work.html" class="paragraph">My Work</a>
+                   <div class="dropdown">
+                       <button class="dropbtn arrowDown">My Work<img src="./images/DropDownArrow.png" width="25px" height="18px" class="arrowDown"/></button>
+                       <div id="myDropdown" class="dropdown-content">
+                        <a href="./work.html" class="paragraph">All Work</a>
+                        <a href="" class="paragraph">The Wild Animal Sanctuary</a>
+                        <a href="" class="paragraph">The Department of the Interior</a>
+                        <a href="" class="paragraph">NightCap</a>
+                        <a href="" class="paragraph">GuideWalk</a>
+                       </div>
+                    </div>
                    <a href="" class="paragraph">Contact Me</a>
                </div>
                <div class="icons">
@@ -22,7 +32,21 @@
        </header>
        <section class="section">
            <div class="content">
-               <h1>Chelsey Gravel Designs</h1>
+               <h1 class="myBrand" id="myBtn">Chelsey Gravel Designs</h1>
+               <!-- The Modal-->
+               <div id="myModal" class="modal">
+                   <!-- Modal content -->
+                   <div class="modal-content">
+                        <div class="modal-header">
+                            <span class="close">&times;</span>
+                            <h5>Take A Look At My Brand Statment</h5>
+                        </div>
+                        <div class="modal-body">
+                       <p>UxUi designer with a background in child education, and a certificate from the University of Denver, Colorado. With skills in HTML5, CSS, JavaScript, conducting interviews and research, designing wireframes and responsive prototypes across multiple platforms. Passion for user experience design, UX development and engineering. Designing from a math minded, logical approach with a focus on the experience a user receives from a visual design layout. Creating designs to be organized, clean, simple and rewarding for users to experience.
+                        Strong skills in creating, analyzing and front-end coding. Specializing in strong teamwork, leadership and motivational skills. Adding value as a self motivated and driven problem solver to any team.</p>
+                        </div>
+                    </div>
+               </div>
                <img src="images/b&w portrait 2.jpg" class="blackAndWhite" alt="Black and white picture of Chelsey">
                <div class="aboutMe">
                <p class="paragraph">I am a UX/UI designer with a passion for user experience design along with UX development and engineering. I love creating, analyzing and front-end coding.</p>
@@ -40,5 +64,6 @@
            <p class="email"><a href="mailto:chelseygravelsesigns@gmail.com">ChelseyGravelDesigns@gmail.com</a></p>
        </footer>
     </body>
-    
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="js/index.js"></script>
 </html>
